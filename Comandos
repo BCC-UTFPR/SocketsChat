@@ -1,0 +1,16 @@
+- protocolo textual:
+   -- JOIN [apelido] 
+   * junta-se ao grupo de conversação 
+   -- MSG [apelido] "texto"
+   * mensagem enviada a todos os membros do grupo pelo IP 225.1.2.3 e porta 6789 
+   -- MSGIDV FROM [apelido] TO [apelido] "texto" 
+   * mensagem enviada a um membro do grupo para ser recebida na porta 6799
+   -- LISTFILES [apelido] 
+   * solicitação de listagem de arquivos para um usuário 
+   -- FILES [arq1, arq2, arqN] 
+   * resposta para o LISTFILES
+   -- DOWNFILE [apelido] filename 
+   * solicita arquivo do servidor. 
+   -- DOWNINFO [filename, size, IP, PORTA] 
+   * resposta com informações sobre o arquivo e conexão TCP. 
+   -- LEAVE [apelido] * deixa o grupo de conversação
